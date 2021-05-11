@@ -1,0 +1,49 @@
+def main():
+
+    a = input("Seu animal é Mamifero(m), Ave(a) ou Reptil(r)?: ")
+    if(a == "m"):
+        a = input("Seu animal é Quadrupide (q), Bipede (b), Voador(v) ou Aquatico(aq)?:  ")
+        if(a == "q"):
+            a = input("Seu animal é Herbivoro(h) ou Carnivoro(c) ")
+            if(a == "h"):
+                print("Seu animal é o Cavalo")
+            elif(a == "c"):
+                print("Seu animal é o Leão")
+            else:
+                return False
+        if(a == "b"):
+            a = input("Seu animal é Onivoro(digite o) ou Frutifero(digite f)?:  ")    
+            if (a == "o"):
+              print("Seu animal é o Homem")
+            elif(a == "f"):
+                print("Seu animal é o Macaco")
+        elif (a == "v"):
+            print("Seu animal é o Morcego")
+        elif(a == "aq"):
+            print("Seu animal é a Baleia")
+        else: 
+            return False
+    if(a == "a"):
+        a = input("Sua Ave é Nao-Voadora(nv), Nadadora(nd) ou de Rapina(rp)?: ")
+        if(a == "nv"):
+          a = input("Sua Ave é Tropical(tp) ou Polar(pl)?: ")
+          if(a == "tp"):
+              print("Sua ave é o Avestruz")
+          elif(a == "pl"):
+              print("Sua ave é o Pinguim")
+          else: return False
+        if(a == "nd"):
+          print("Sua ave é o Pato")
+        elif (a == "rp"):
+            print("Sua ave é a Aguia")
+        else: return False
+    if(a == "r"): 
+      a = input("Seu Reptil é Com casco(cs), Carnivoro(cv) ou Sem patas(sp)?: ")       
+      if(a == "cs"):
+        print("Seu reptil é a Tartaruga")
+      if(a == "cv"):
+        print("Seu reptil é o Crocodilo")
+      if(a == "sp"):
+         print("Seu reptil é a Cobra")
+      else: return False
+main()
