@@ -1,0 +1,46 @@
+def main():
+  print("Seja bem vindo a adega do Leo, o que deseja?")
+  print("Cerveja\nVodka\nPinga\nWhisky")
+  valor_cerv = 10
+  valor_vod = 100
+  valor_pin = 30
+  valor_whi = 200
+  a = input("Qual seu pedido:? ")
+  if(a == "cerveja"):
+    quanti_cerv = int(input("Quantas cervejas?: "))
+    print(f'Seu pedido deu R$: {valor_cerv * quanti_cerv}')
+    a = input("Precisa de troco ?: ")
+    if(a == "sim"):
+      a = int(input("Pra quanto ?: "))
+      print(f' Seu troco é {a - valor_cerv * quanti_cerv} R$, Obrigado pela compra!<3')
+    else:
+        print("Obrigado pela compra !<3")
+  if (a == "vodka"):
+    quanti_vod = int(input("Quantas garrafas?: "))
+    print(f'Seu pedido deu R$: {valor_vod * quanti_vod}')
+    a = input("Precisa de troco ?: ")
+    if(a == "sim"):
+      a = int(input("Pra quanto ?: "))
+      print(f' Seu troco é {a - valor_vod * quanti_vod}R$,  Obrigado pela compra !<3')
+    else:
+        print("Obrigado pela compra !<3")
+  if(a == "pinga"):
+    quanti_pin = int(input("Quantas doses?: "))
+    print(f'Seu pedido deu R$: {valor_pin * quanti_pin}')
+    a = input("Precisa de troco ?: ")
+    if(a == "sim"):
+      a = int(input("Pra quanto ?: "))
+      print(f' Seu troco é {a - valor_pin * quanti_pin}R$, Obrigado pela compra!<3')
+    else:
+        print("Obrigado pela compra !<3")
+  if(a == "whisky"):
+    quanti_whi = int(input("Quantas garrafas?: "))
+    print(f'Seu pedido deu R$: {valor_whi * quanti_whi}')
+    a = input("Precisa de troco ?: ")
+    if(a == "sim"):
+      a = int(input("Pra quanto ?: "))
+      print(f' Seu troco é {a - valor_whi * quanti_whi}R$,  Obrigado pela compra!<3')
+    else:
+        print("Obrigado pela compra !<3")
+  else: return False
+main()
