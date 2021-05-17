@@ -1,0 +1,27 @@
+cont_idade_peso = 0
+cont_azul = 0
+cont_alt = 0
+
+for cont in range(1,5):
+    print(f'\n=== DADOS DA {cont}a PESSSOA ===')
+    idade = int(input('Digite a idade: '))
+    alt = float(input('Digite a altura: '))
+    peso = float(input('Digite peso: '))
+    
+    olho = input('Digite a cor do olho (a/p/v/c): ').lower()
+    while not (olho == 'a' or olho == 'p' or olho == 'v' or olho == 'c'):
+        print('-->Erro - cor do olho inválida!\n')
+        olho = input('Digite a cor do olho (a/p/v/c): ').lower()
+    
+    if idade > 50 and peso < 60:
+        cont_idade_peso += 1
+    
+    if olho == 'a':
+        cont_azul += 1
+    
+    if alt > 1.68 and olho != 'v':
+        cont_alt += 1
+
+print(f'Total pessoas idade > 50 e peso < 60: {cont_idade_peso}')
+print(f'{((cont_azul*100)/cont):.2f}% pessoas com olhos azuis')
+print(f'Total pessoas alt > 1.68 sem olho verde: {cont_alt}')
