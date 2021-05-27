@@ -1,0 +1,20 @@
+prod = []
+quant_prod = []
+vmn = 0
+vma = 1000
+nvm = ''
+nvma = ''
+for i in range(5):
+  a = input()
+  prod.append(a)
+  b = int(input())
+  quant_prod.append(b)
+for i in range(5):
+  if quant_prod[i] > vmn :
+    vmn = quant_prod[i]
+    nvm = prod[i]
+  if quant_prod[i] < vma:
+    vma = quant_prod[i]
+    nvma = prod[i]
+print(nvma)
+print(nvm)
