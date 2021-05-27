@@ -1,0 +1,12 @@
+prod = []
+prec_prod = []
+for i in range (5):
+  a = input('Digite a fruta ')
+  prod.append(a)
+  b = float(input("digite o valor "))
+  prec_prod.append(b)
+c = float(input("Digite o valor procurado "))
+for i in range(5):
+  if prec_prod[i] == c:
+    i = prod[i]
+    print(f'{i}')
