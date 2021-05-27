@@ -1,0 +1,6 @@
+prec_prod = []
+for i in range(5):
+  a = float(input("digite o valor "))
+  prec_prod.append(a)
+b = sum(prec_prod)
+print (f'{b:.2f}')
