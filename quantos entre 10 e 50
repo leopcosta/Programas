@@ -1,0 +1,6 @@
+cont = 0
+for i in range(5):
+  a = float(input())
+  if a >= 10 and a <=50 :
+    cont +=1
+print(cont)
